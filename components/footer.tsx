@@ -1,6 +1,7 @@
 import React from "react"
 import Link from "next/link";
-import { Mountain, Phone, Mail } from "lucide-react";
+import Image from "next/image";
+import { Phone, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -37,9 +38,14 @@ export default function Footer() {
 
           {/* Center Logo & Socials */}
           <div className="flex flex-col items-center text-center">
-            <Link href="/" className="flex items-center gap-2 mb-5 hover:scale-105 transition-all duration-300">
-              <Mountain className="w-8 h-8" />
-              <span className="text-xl font-bold tracking-wide">اسيلتكس</span>
+            <Link href="/" className="flex items-center justify-center mb-5 hover:scale-105 transition-all duration-300">
+              <Image 
+                src="/logo_hori_trans.png" 
+                alt="اسيلتكس" 
+                width={200} 
+                height={60}
+                className="w-32 h-12 lg:w-48 lg:h-16"
+              />
             </Link>
             <div className="flex items-center gap-3">
               <FooterSocial href="https://wa.me/placeholder-whatsapp" label="WhatsApp">

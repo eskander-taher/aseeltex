@@ -9,36 +9,36 @@ export const metadata = {
 
 const tourPrograms = [
   {
-    title: "برنامج سياحي في موسكو",
-    duration: "11 يوم 10 ليالي",
-    description: "رحلة شاملة لاكتشاف جمال وتاريخ موسكو ومعالمها السياحية الأبرز",
-    highlights: ["الساحة الحمراء", "الكرملين", "حديقة غوركي", "VDNKh", "موسكو سيتي"],
-    href: "/tour-programs/moscow-11-days",
-    type: "شامل"
+    title: "برنامج سياحي في موسكو - 11 يوم / 10 ليالي",
+    duration: "11 يوم / 10 ليالي",
+    type: "برنامج متكامل",
+    description: "رحلة شاملة لاكتشاف جمال موسكو والريف الروسي",
+    highlights: ["الساحة الحمراء والكرملين", "موسكو سيتي وناطحات السحاب", "الريف الروسي والطبيعة الخلابة", "جولات نهرية ومتاحف عالمية"],
+    href: "/contact"
   },
   {
-    title: "برنامج سياحي في روسيا",
-    duration: "9 ليالي 10 أيام",
-    description: "برنامج متكامل يستكشف أبرز المدن الروسية ومعالمها التاريخية",
-    highlights: ["موسكو", "سانت بطرسبرغ", "الريف الروسي", "المتاحف الشهيرة"],
-    href: "/tour-programs/russia-10-days",
-    type: "متكامل"
+    title: "برنامج سياحي في روسيا - 9 ليالي / 10 أيام",
+    duration: "9 ليالي / 10 أيام",
+    type: "برنامج مكثف",
+    description: "اكتشاف أفضل معالم روسيا في رحلة مكثفة",
+    highlights: ["موسكو الكبرى", "الريف الروسي", "المتاحف والحدائق", "التجارب التقليدية"],
+    href: "/contact"
   },
   {
-    title: "برنامج لثلاثة أيام في موسكو",
+    title: "برنامج 3 أيام في موسكو",
     duration: "3 أيام",
-    description: "جولة مكثفة لأهم معالم موسكو في وقت قياسي",
-    highlights: ["الساحة الحمراء", "الكرملين", "حديقة غوركي", "المتاحف"],
-    href: "/tour-programs/moscow-3-days",
-    type: "مكثف"
+    type: "برنامج سريع",
+    description: "جولة سريعة لأهم معالم موسكو",
+    highlights: ["الساحة الحمراء", "الكرملين", "حديقة زاريادي", "متحف تريتياكوف"],
+    href: "/contact"
   },
   {
-    title: "برنامج سانت بطرسبرغ",
+    title: "برنامج سانت بطرسبرغ - 6 أيام",
     duration: "6 أيام",
-    description: "استكشاف مدينة سانت بطرسبرغ الساحرة ومعالمها الإمبراطورية",
-    highlights: ["قصر الشتاء", "الأرميتاج", "بيترهوف", "كنيسة الدم"],
-    href: "/tour-programs/st-petersburg",
-    type: "ثقافي"
+    type: "برنامج شمالي",
+    description: "استكشاف جمال سانت بطرسبرغ التاريخي",
+    highlights: ["قصر بيترهوف", "متحف الأرميتاج", "جسر أنيشكوف", "قصر يوسوبوف"],
+    href: "/contact"
   }
 ];
 
@@ -172,6 +172,255 @@ export default function TourProgramsPage() {
               </div>
               <h3 className="text-xl font-semibold text-red-800 mb-3">خدمة فاخرة</h3>
               <p className="text-gray-600">أفضل الفنادق والمطاعم والخدمات على مدار الساعة</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Detailed Itineraries */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-foreground mb-12 text-center">البرامج السياحية بالتفصيل</h2>
+          
+          {/* Moscow 11 Days Program */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-foreground mb-6">برنامج سياحي في موسكو - 11 يوم / 10 ليالي</h3>
+            <div className="bg-card rounded-xl p-6 shadow-luxury">
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">اليوم الأول</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>الاستقبال في المطار من قبل أحد مندوبي الشركة</li>
+                    <li>التوجه إلى الفندق واخذ قسط من الراحة</li>
+                    <li>جولة مسائية في سنتر موسكو وتناول وجبة العشاء</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">اليوم الثاني</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>زيارة الساحة الحمراء (Красный площад) والكرملين (Кремль)</li>
+                    <li>المشي في شارع نيكولسكيا (никольская улица)</li>
+                    <li>زيارة مجمع GUM</li>
+                    <li>جولة في بارك زرياد (парк зарядье) والنظر إلى نهر موسكو من الجسر الطائر</li>
+                    <li>زيارة مجمع ЦУМ</li>
+                    <li>مشاهدة حراس الكرملين وتغيير الحراسة</li>
+                    <li>زيارة أخوتني رياد (Охотный ряд) - مول تحت الأرض بـ4 أدوار</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">اليوم الثالث</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>زيارة أكبر حديقة حيوان في أوروبا (зоопарк) - أكثر من 3000 نوع من الحيوانات</li>
+                    <li>زيارة شارع أربات الجديد والقديم (арбат улица)</li>
+                    <li>زيارة موسكو سيتي (Москва сити) وناطحات السحاب</li>
+                    <li>زيارة أفيا مول (Афивмолл)</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">اليوم الرابع</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>زيارة إيزمايلوفسكي كريمل (Измайловский Кремль) والأسواق الشعبية والبازار</li>
+                    <li>زيارة مدينة العاب موسكو (остров мечты)</li>
+                    <li>زيارة أفيابارك (Авиапарк) - أكبر مركز تسوق في أوروبا وأطول حوض سمك في العالم</li>
+                    <li>زيارة بارك الحرية (парк Свободы)</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">اليوم الخامس</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>رحلة إلى الريف الروسي - طبيعة خلابة وأكواخ ريفية وشواء</li>
+                    <li>الفعاليات: ركوب عربة تجرها الهاسكي / ركوب الهليكوبتر / ركوب الدباب / ركوب الأحصنة</li>
+                    <li>زيارة هولندا الصغيرة (маленькая голландия)</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">اليوم السادس</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>زيارة ВДНХ (فدنخا) - مجمع البيوت السوفيتية والمتاحف</li>
+                    <li>شمس موسكو (солнце Москва) - أكبر دولاب هواء في أوروبا</li>
+                    <li>متحف الفضاء (павильон космос)</li>
+                    <li>مزرعة المدينة (городская ферма ВДНХ)</li>
+                    <li>المدينة المائية (ОКЕАНАРИУМ)</li>
+                    <li>جولة مسائية على نهر موسكو - راديسون كروز ساعتين مع العشاء</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">اليوم السابع</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>زيارة مول أكواريوم لحضور السيرك الكبير</li>
+                    <li>جولة في متحف كروكس المائي (КРОКУС СИТИ ОКЕАНАРИУМ)</li>
+                    <li>زيارة بارك توبياري (Парк AIVA) - منحوتات من نباتات حية</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">اليوم الثامن</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>زيارة أكبر شلال في منطقة موسكو (ГРЕМЯЧИЙ КЛЮЧ)</li>
+                    <li>زيارة منتزه المستقبل (Сад будущего) - أشجار بلوط عمرها +300 عام</li>
+                    <li>زيارة الحديقة النباتية</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">اليوم التاسع</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>زيارة آرت أوسادبا فيريتيوفو (Арт УСАДЬБА ВЕРЕТЬЕВО) - غابات وريف وتغذية الغزلان</li>
+                    <li>منازل التايغا المطلة على النهر مع التدفئة الخشبية والشواء</li>
+                    <li>التنزه في منتزه باومنا (Сад баумана)</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">اليوم العاشر</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>مخيم الهوبيت في ريف موسكو - تخييم وصيد السمك</li>
+                    <li>زيارة سوق موسكو الكبير الشعبي</li>
+                    <li>جولة في بارك النصر العسكري (Парк победы)</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">اليوم الحادي عشر</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>الإفطار وحزم الأمتعة</li>
+                    <li>التوجه إلى الأوت لت موسكو الكبير ثم المطار</li>
+                  </ul>
+                </div>
+                <div className="mt-6 p-4 bg-muted rounded-lg">
+                  <h5 className="font-semibold text-foreground mb-2">البرنامج لا يشمل:</h5>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>تذاكر الطيران</li>
+                    <li>وجبة الغداء والعشاء</li>
+                    <li>تذاكر دخول الأماكن السياحية</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Russia 9 Days Program */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-foreground mb-6">برنامج سياحي في روسيا - 9 ليالي / 10 أيام</h3>
+            <div className="bg-card rounded-xl p-6 shadow-luxury">
+              <div className="space-y-6">
+                <p className="text-muted-foreground">(نفس البرنامج أعلاه من اليوم الأول إلى التاسع، وينتهي باليوم العاشر)</p>
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">اليوم العاشر</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>الإفطار وحزم الأمتعة</li>
+                    <li>التوجه إلى الأوت لت موسكو الكبير ثم المطار</li>
+                  </ul>
+                </div>
+                <div className="mt-6 p-4 bg-primary/10 rounded-lg">
+                  <h5 className="font-semibold text-foreground mb-2">البرنامج يشمل:</h5>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>الاستقبال من المطار من قبل أحد مندوبي الشركة</li>
+                    <li>سيارة خاصة طول الرحلة</li>
+                    <li>وجبة الإفطار بوفيه مفتوح في جميع الفنادق</li>
+                    <li>جولات يومية من 8 إلى 10 ساعات</li>
+                    <li>سائق مرشد سياحي</li>
+                    <li>شرائح اتصال وباقات إنترنت</li>
+                    <li>التوديع والتوصيل إلى المطار</li>
+                    <li>خدمة عملاء على مدار 24 ساعة</li>
+                  </ul>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h5 className="font-semibold text-foreground mb-2">البرنامج لا يشمل:</h5>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>تذاكر الطيران</li>
+                    <li>وجبة الغداء والعشاء</li>
+                    <li>تذاكر دخول الأماكن السياحية</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 3 Days Moscow Program */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-foreground mb-6">برنامج 3 أيام في موسكو</h3>
+            <div className="bg-card rounded-xl p-6 shadow-luxury">
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">اليوم الأول: قلب موسكو التاريخي</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>الساحة الحمراء، كاتدرائية سانت باسيل، متحف الدولة التاريخي، ضريح لينين، تسوق في GUM</li>
+                    <li>المساء: شارع الأضواء، حديقة زاريادي</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">اليوم الثاني: عظمة الكرملين والمتاحف</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>زيارة مجمع الكرملين (القصور والكاتدرائيات)، متحف مستودع الكرملين</li>
+                    <li>زيارة معرض تريتياكوف أو متحف بوشكين للفنون</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">اليوم الثالث: حدائق وتجارب فريدة</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>زيارة حديقة تساريتسينو أو حديقة فدنخا (VDNKh)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* St Petersburg 6 Days Program */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-foreground mb-6">برنامج سانت بطرسبرغ - 6 أيام</h3>
+            <div className="bg-card rounded-xl p-6 shadow-luxury">
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">اليوم الأول: الوصول</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>استقبال بسيارة خاصة، تسجيل الدخول للفندق، وقت حر</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">اليوم الثاني: جولة سانت بطرسبرغ (6-7 ساعات)</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>شارع نيفسكي بروسبكت، جسر أنيشكوف، ساحة القصر</li>
+                    <li>كاتدرائية القديس إسحاق، كنيسة المخلص على الدم، كاتدرائية كازان</li>
+                    <li>لافرا ألكسندر نيفسكي، الطراد أورورا، قلعة بطرس وبولس</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">اليوم الثالث: بيترهوف - كرونشتاد (6-7 ساعات)</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>قصر بيترهوف العظيم والنوافير والحدائق</li>
+                    <li>مدينة كرونشتاد الساحلية في جزيرة كوتلين، الكاتدرائية البحرية</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">اليوم الرابع: سانت بطرسبرغ (5-6 ساعات)</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>قصر يوسوبوف (موقع اغتيال راسبوتين)</li>
+                    <li>متحف الأرميتاج في قصر الشتاء</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">اليوم الخامس: بوشكين / تسارسكوي سيلو (5-6 ساعات)</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>قصر كاترين وغرفة العنبر "عجوبة العالم الثامنة"</li>
+                    <li>حديقة كاثرين</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-2">اليوم السادس: المغادرة</h4>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>إفطار، تسجيل خروج، التوجه للمطار</li>
+                  </ul>
+                </div>
+                <div className="mt-6 p-4 bg-primary/10 rounded-lg">
+                  <h5 className="font-semibold text-foreground mb-2">الرحلات تشمل:</h5>
+                  <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                    <li>جميع وسائل النقل</li>
+                    <li>الإقامة بغرفة مزدوجة شاملة الإفطار</li>
+                    <li>مرشد سياحي</li>
+                    <li>تذاكر دخول المواقع</li>
+                    <li>دعم تأشيرة روسية</li>
+                    <li>تذاكر القطار موسكو - سانت بطرسبرغ</li>
+                    <li>أسعار خاصة للمجموعات والشركات السياحية</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>

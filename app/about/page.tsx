@@ -72,7 +72,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/logo.jpeg"
+                src="/logo.png"
                 alt="فريق اسيلتكس للسفر والسياحة"
                 fill
                 className="object-cover"
