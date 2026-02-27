@@ -28,7 +28,7 @@ export default function HeroSection() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
-            href="/activities"
+            href="/services"
             className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded-full text-lg font-bold hover:opacity-90 transition-opacity duration-200 shadow-lg"
           >
             {"استكشف الخدمات"}
