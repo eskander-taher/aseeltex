@@ -31,7 +31,7 @@ export default function HeroSection() {
             href="/activities"
             className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded-full text-lg font-bold hover:opacity-90 transition-opacity duration-200 shadow-lg"
           >
-            {"استكشف الأنشطة"}
+            {"استكشف الخدمات"}
           </Link>
           <Link
             href="/contact"

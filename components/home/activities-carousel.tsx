@@ -75,6 +75,16 @@ export default function ActivitiesCarousel() {
             ))}
           </div>
         </div>
+        
+        {/* View All Activities Button */}
+        <div className="text-center mt-10">
+          <Link
+            href="/activities"
+            className="inline-block bg-white text-accent px-8 py-3 rounded-full text-lg font-bold hover:bg-accent hover:text-white transition-all duration-300 shadow-lg border-2 border-white"
+          >
+            {"عرض جميع الأنشطة"}
+          </Link>
+        </div>
       </div>
     </section>
   );

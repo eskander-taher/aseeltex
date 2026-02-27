@@ -65,7 +65,7 @@ export default function TourProgramsPage() {
                 href="/activities" 
                 className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-red-700 transition-all duration-300"
               >
-                استكشف الأنشطة
+                استكشف الخدمات
               </Link>
             </div>
           </div>

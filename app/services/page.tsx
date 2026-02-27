@@ -98,7 +98,7 @@ export default function ServicesPage() {
             }
           </p>
           <a
-            href="https://wa.me/placeholder-whatsapp"
+            href="https://wa.me/79374011670"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-accent text-accent-foreground px-10 py-3 rounded-full font-bold hover:opacity-90 transition-opacity duration-200 shadow-lg"

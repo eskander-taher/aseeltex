@@ -64,24 +64,27 @@ export default function RussianTourismPage() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
-        <Image
-          src="/images/hero-cathedral.jpg"
-          alt="السياحة في روسيا"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-primary/60" />
-        <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
+      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 bg-primary overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-10 right-20 text-primary-foreground">
+            <Star className="w-4 h-4" />
+          </div>
+          <div className="absolute top-20 left-32 text-primary-foreground">
+            <Star className="w-3 h-3" />
+          </div>
+          <div className="absolute bottom-16 right-40 text-primary-foreground">
+            <Star className="w-5 h-5" />
+          </div>
+        </div>
+        <div className="relative z-10 text-center px-4">
           <div className="flex items-center justify-center gap-4 mb-4">
             <Star className="w-5 h-5 text-primary-foreground/60" />
-            <h1 className="text-3xl md:text-5xl font-bold text-primary-foreground text-balance">
+            <h1 className="text-3xl md:text-5xl font-bold text-primary-foreground">
               {"السياحة الروسية"}
             </h1>
             <Star className="w-5 h-5 text-primary-foreground/60" />
           </div>
-          <p className="text-primary-foreground/90 text-lg md:text-xl">
+          <p className="text-primary-foreground/70 text-lg">
             {"اكتشف جمال روسيا الساحر مع شركة اسيلتكس"}
           </p>
         </div>
@@ -182,7 +185,7 @@ export default function RussianTourismPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="https://wa.me/placeholder-whatsapp"
+              href="https://wa.me/79374011670"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-accent text-accent-foreground px-10 py-3 rounded-full font-bold hover:opacity-90 transition-opacity duration-200 shadow-lg"
