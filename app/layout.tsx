@@ -13,7 +13,7 @@ const cairo = Cairo({
 
 export const metadata: Metadata = {
 	title: {
-		default: "اسيلتكس للسفر والسياحة | اسيلتكس Travel & Tourism",
+		default: "اسيلتكس للسفر والسياحة | Aseeltex Travel & Tourism",
 		template: "%s | اسيلتكس للسفر والسياحة",
 	},
 	description:
