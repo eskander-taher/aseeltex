@@ -27,9 +27,12 @@ export default function ActivitiesCarousel() {
   return (
     <section className="py-16 lg:py-24 bg-accent">
       <div className="mx-auto max-w-7xl px-4">
-        <h2 className="text-2xl md:text-3xl font-bold text-accent-foreground text-center mb-10">
-          {"الفعاليات والأنشطة"}
+        <h2 className="text-2xl md:text-3xl font-bold text-accent-foreground text-center mb-4">
+          {"استكشف أنشطتنا السياحية"}
         </h2>
+        <p className="text-center text-accent-foreground/80 mb-10">
+          {"Наши туристические мероприятия | Исследуйте наши туристические мероприятия"}
+        </p>
         <div className="relative">
           <button
             onClick={() => scroll("right")}

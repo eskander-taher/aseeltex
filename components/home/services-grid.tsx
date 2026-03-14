@@ -12,9 +12,12 @@ export default function ServicesGrid() {
   return (
     <section className="py-16 lg:py-24 bg-background">
       <div className="mx-auto max-w-7xl px-4">
-        <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-12">
+        <h2 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-4">
           {"بعض الخدمات التي نقدمها"}
         </h2>
+        <p className="text-center text-muted-foreground mb-12">
+          {"Наши услуги | Услуги, которые мы предоставляем"}
+        </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service) => (
             <Link

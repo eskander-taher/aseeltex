@@ -3,66 +3,165 @@ import { Star, MapPin, Phone, Wifi, Car, Coffee, Dumbbell } from "lucide-react";
 import Link from "next/link";
 
 export const metadata = {
-  title: "أفضل فنادق موسكو الفاخرة | اسيلتكس للسفر والسياحة",
-  description: "اكتشف أفضل فنادق الخمس نجوم في موسكو القريبة من الساحة الحمراء. حجوزات فندقية مميزة مع اسيلتكس.",
+  title: "أفضل فنادق موسكو وسانت بطرسبرغ الفاخرة | اسيلتكس للسفر والسياحة",
+  description: "اكتشف أفضل فنادق الخمس نجوم في موسكو وسانت بطرسبرغ القريبة من المعالم السياحية. حجوزات فندقية مميزة مع اسيلتكس.",
 };
 
 const hotels = [
+  // St. Petersburg Hotels
   {
-    name: "فندق فور سيزونز موسكو",
-    rating: { google: 4.8, tripAdvisor: 4.5, booking: 9.2 },
-    description: "يتميز بموقع مثالي بالقرب من الساحة الحمراء مع تصميم فاخر وخدمات عالمية المستوى.",
-    location: "على بعد 5 دقائق سيراً من الساحة الحمراء",
-    features: ["مطاعم راقية", "سبا ومركز لياقة", "صالة رجال أعمال", "خدمة كونسيرج"],
-    image: "/images/hotels/four-seasons.jpg"
+    name: "فندق فالو سيتي | Valo Hotel City",
+    rating: { google: 4.6, tripAdvisor: 4.4, booking: 8.8 },
+    description: "فندق عصري يقع في قلب سانت بطرسبرغ مع خدمات ممتازة وتصميم أنيق.",
+    location: "سالوفا 61، سانت بطرسبرغ، 192102",
+    features: ["واي فاي مجاني", "مركز لياقة", "مطعم فاخر", "خدمة غرف"],
+    image: "/images/hotels/valo-city.jpg"
   },
   {
-    name: "فندق ذا ريتز كارلتون موسكو",
+    name: "فندق GAMMA | ОТЕЛЬ ГАММА",
+    rating: { google: 4.5, tripAdvisor: 4.3, booking: 8.7 },
+    description: "فندق مريح يقع في موقع استراتيجي بالقرب من المرافق الرئيسية.",
+    location: "130 جسر قناة Overodny، سانت بطرسبرغ، 198095",
+    features: ["واي فاي مجاني", "مواقف سيارات", "مطعم", "خدمة 24 ساعة"],
+    image: "/images/hotels/gamma.jpg"
+  },
+  {
+    name: "فندق كورينثيا | Отель «Corinthia»",
+    rating: { google: 4.7, tripAdvisor: 4.5, booking: 9.0 },
+    description: "فندق فاخر يقدم خدمات خمس نجوم في قلب سانت بطرسبرغ.",
+    location: "نيفسكي، 57، سانت بطرسبرغ، 191025",
+    features: ["سبا فاخر", "مطاعم راقية", "قاعات اجتماعات", "مركز لياقة"],
+    image: "/images/hotels/corinthia.jpg"
+  },
+  {
+    name: "فندق Lotte | Lotte Hotel St. Petersburg",
+    rating: { google: 4.8, tripAdvisor: 4.6, booking: 9.2 },
+    description: "فندق فاخر من مجموعة LOTTE HOTELS في موقع متميز بقرب كاتدرائية القديس إسحاق.",
+    location: "Antonenko lane, 2. سانت بطرسبرغ، 190000",
+    features: ["سبا فاخر", "مطاعم عالمية", "قاعات مؤتمرات", "خدمة كونسيرج"],
+    image: "/images/hotels/lotte-st-petersburg.jpg"
+  },
+
+  // Moscow Hotels
+  {
+    name: "فندق Swissôtel | Swissôtel Красные Холмы",
     rating: { google: 4.7, tripAdvisor: 4.5, booking: 9.1 },
-    description: "فخم يتميز بديكورات أنيقة وخدمات خمس نجوم، على بعد دقائق سيرًا من الكرملين.",
-    location: "على بعد 5 دقائق سيراً من الكرملين",
-    features: ["مطاعم فاخرة", "سبا فاخر", "قاعات اجتماعات", "خدمة على مدار الساعة"],
-    image: "/images/hotels/ritz-carlton.jpg"
+    description: "فندق فاخر بإطلالات بانورامية على موسكو وخدمات عالمية المستوى.",
+    location: "جسر Kosmodamianskaya، 52/6، موسكو",
+    features: ["مسبح على السطح", "سبا فاخر", "مطعم بانورامي", "مركز لياقة"],
+    image: "/images/hotels/swissotel.jpg"
   },
   {
-    name: "فندق ناشيونال موسكو",
-    rating: { google: 4.5, tripAdvisor: 4.3, booking: 8.9 },
-    description: "فاخر يتميز بإطلالة رائعة على الساحة الحمراء، ويوفر غرفًا فخمة ومرافق مميزة.",
-    location: "على بعد 5 دقائق سيراً من الساحة الحمراء",
+    name: "فندق كوزموس بافيليتسكايا | КОСМОС ПАВЕЛЕЦКАЯ",
+    rating: { google: 4.4, tripAdvisor: 4.2, booking: 8.6 },
+    description: "فندق عصري من مجموعة Cosmos Hotel Group في موقع مركزي.",
+    location: "Kozhevnicheskaya، 8، بناء 3، موسكو",
+    features: ["واي فاي مجاني", "مطعم", "قاعات اجتماعات", "خدمة 24 ساعة"],
+    image: "/images/hotels/cosmos-paveletskaya.jpg"
+  },
+  {
+    name: "فندق 1-AZIMUT سيتي | 1-AZIMUT City Hotel Smolenskaya",
+    rating: { google: 4.5, tripAdvisor: 4.3, booking: 8.8 },
+    description: "فندق حديث من سلسلة AZIMUT في موقع مركزي مقابل الخاتم الذهبي.",
+    location: "شارع سمولينسكايا، 8، موسكو",
+    features: ["واي فاي مجاني", "مركز لياقة", "مطعم", "خدمة غرف"],
+    image: "/images/hotels/azimut-smolenskaya.jpg"
+  },
+  {
+    name: "فندق TURRIS | TURRIS HOTEL Tverskaya",
+    rating: { google: 4.3, tripAdvisor: 4.1, booking: 8.5 },
+    description: "سلسلة فنادق TURRIS مع عدة فروع في مواقع متميزة بموسكو.",
+    location: "ميدان Tverskaya Zastava، 2، موسكو",
+    features: ["واي فاي مجاني", "مطعم", "خدمة 24 ساعة", "مواقف سيارات"],
+    image: "/images/hotels/turris-tverskaya.jpg"
+  },
+  {
+    name: "فندق الحلقة الذهبية | ЗОЛОТОЕ КОЛЬЦО",
+    rating: { google: 4.6, tripAdvisor: 4.4, booking: 8.9 },
+    description: "فندق خمس نجوم فاخر في قلب موسكو.",
+    location: "شارع Smolenskaya، 5، موسكو",
+    features: ["مطاعم راقية", "سبا فاخر", "قاعات اجتماعات", "خدمة كونسيرج"],
+    image: "/images/hotels/golden-ring.jpg"
+  },
+  {
+    name: "فندق CONTINENTAL | Hotel CONTINENTAL",
+    rating: { google: 4.7, tripAdvisor: 4.5, booking: 9.0 },
+    description: "فندق خمس نجوم فاخر في موقع متميز بشارع Tverskaya.",
+    location: "شارع Tverskaya، 22، موسكو",
     features: ["مطاعم فاخرة", "سبا ومركز لياقة", "قاعات أحداث", "خدمة كونسيرج"],
-    image: "/images/hotels/national.jpg"
+    image: "/images/hotels/continental.jpg"
   },
   {
-    name: "فندق متروبول موسكو",
-    rating: { google: 4.4, tripAdvisor: 4.2, booking: 8.8 },
-    description: "من أبرز الفنادق التاريخية، يقع على بعد خطوات من الساحة الحمراء ويوفر خدمات راقية.",
-    location: "على بعد 3 دقائق سيراً من الساحة الحمراء",
-    features: ["مطاعم راقية", "سبا ومركز لياقة", "قاعات فاخرة", "خدمة كونسيرج"],
-    image: "/images/hotels/metropol.jpg"
+    name: "فندق LOTTE موسكو | LOTTE HOTEL Moscow",
+    rating: { google: 4.8, tripAdvisor: 4.6, booking: 9.2 },
+    description: "فندق خمس نجوم فاخر من مجموعة LOTTE HOTELS.",
+    location: "شارع Novinsky، 8، بناء 2، موسكو",
+    features: ["سبا فاخر", "مطاعم عالمية", "قاعات مؤتمرات", "مركز لياقة بدنية"],
+    image: "/images/hotels/lotte-moscow.jpg"
   },
   {
-    name: "فندق سافوي موسكو",
-    rating: { google: 4.3, tripAdvisor: 4.1, booking: 8.7 },
-    description: "راقٍ يقدم غرفًا أنيقة وخدمات ممتازة على مقربة من المعالم الرئيسية.",
-    location: "على بعد 10 دقائق سيراً من الساحة الحمراء",
-    features: ["مطاعم راقية", "سبا ومركز لياقة", "قاعات اجتماعات", "خدمة كونسيرج"],
-    image: "/images/hotels/savoy.jpg"
+    name: "فندق Radisson Slavyanskaya | Radisson Slavyanskaya Hotel",
+    rating: { google: 4.5, tripAdvisor: 4.3, booking: 8.7 },
+    description: "فندق عالمي من سلسلة Radisson مع خدمات ممتازة.",
+    location: "ميدان Eurasia، 2، موسكو",
+    features: ["مسبح", "سبا", "مطعم", "قاعات اجتماعات", "مركز لياقة"],
+    image: "/images/hotels/radisson-slavyanskaya.jpg"
   },
   {
-    name: "فندق ميرروس موسكو كرملين",
-    rating: { google: 4.4, tripAdvisor: 4.2, booking: 8.8 },
-    description: "يتميز بالطراز الكلاسيكي، قريب جدًا من الساحة الحمراء، مع خدمات ممتازة.",
-    location: "على بعد 10 دقائق سيراً من الكرملين",
-    features: ["مطاعم راقية", "سبا ومركز لياقة", "قاعات فاخرة", "خدمة كونسيرج"],
-    image: "/images/hotels/marriott.jpg"
+    name: "فندق Radisson Collection | Radisson Collection Hotel Moscow",
+    rating: { google: 4.8, tripAdvisor: 4.6, booking: 9.3 },
+    description: "فندق خمس نجوم فاخر من مجموعة Radisson Collection.",
+    location: "شارع Kutuzovsky، 2/1، بناء 1، موسكو",
+    features: ["سبا فاخر", "مطاعم راقية", "قاعات مؤتمرات", "خدمة كونسيرج"],
+    image: "/images/hotels/radisson-collection.jpg"
   },
   {
-    name: "فندق بالميرا بزنس كلوب",
-    rating: { google: 4.2, tripAdvisor: 4.0, booking: 8.6 },
-    description: "يتميز بالهدوء والفخامة مع موقع قريب من المناطق السياحية الرئيسية.",
-    location: "على بعد 15 دقيقة بالسيارة من الساحة الحمراء",
-    features: ["مطاعم راقية", "مركز لياقة بدنية", "قاعات اجتماعات", "خدمة كونسيرج"],
-    image: "/images/hotels/palmira.jpg"
+    name: "فندق The St. Regis | The St. Regis Moscow Nikolskaya",
+    rating: { google: 4.9, tripAdvisor: 4.7, booking: 9.4 },
+    description: "فندق فاخر جداً من مجموعة St. Regis في قلب موسكو.",
+    location: "شارع Nikolskaya، 12، موسكو",
+    features: ["مطاعم عالمية", "سبا فاخر", "قاعات مؤتمرات", "خدمة كونسيرج"],
+    image: "/images/hotels/st-regis.jpg"
+  },
+  {
+    name: "فندق أرارات بارك حياة | АРАРАТ ПАРК ХАЯТТ",
+    rating: { google: 4.7, tripAdvisor: 4.5, booking: 9.1 },
+    description: "فندق فاخر من مجموعة Hyatt في موقع متميز.",
+    location: "شارع Neglinnaya، 4، موسكو",
+    features: ["سبا فاخر", "مطاعم راقية", "مسبح", "مركز لياقة"],
+    image: "/images/hotels/ararat-park-hyatt.jpg"
+  },
+  {
+    name: "فندق PETR I | ООО ОТЕЛЬ «ПЕТР I»",
+    rating: { google: 4.6, tripAdvisor: 4.4, booking: 9.0 },
+    description: "فندق أنيق في موقع مركزي بالقرب من الكرملين.",
+    location: "شارع Neglinnaya، 17، بناء 1، موسكو",
+    features: ["مطعم", "واي فاي مجاني", "قاعات اجتماعات", "خدمة 24 ساعة"],
+    image: "/images/hotels/peter-i.jpg"
+  },
+  {
+    name: "فندق METROPOL | МЕТРОПОЛЬ",
+    rating: { google: 4.6, tripAdvisor: 4.4, booking: 8.9 },
+    description: "فندق تاريخي شهير في قلب موسكو بالقرب من الساحة الحمراء.",
+    location: "Teatralny proezd، 2، موسكو",
+    features: ["مطاعم تاريخية", "سبا", "قاعات فاخرة", "خدمة كونسيرج"],
+    image: "/images/hotels/metropol-historical.jpg"
+  },
+  {
+    name: "فندق BALCHUG KEMPINSKI | БАЛЧУГ КЕМПИНСКИ",
+    rating: { google: 4.8, tripAdvisor: 4.6, booking: 9.2 },
+    description: "فندق خمس نجوم فاخر من مجموعة Kempinski.",
+    location: "شارع Balchug، 1، موسكو",
+    features: ["سبا فاخر", "مطاعم عالمية", "قاعات مؤتمرات", "مركز لياقة"],
+    image: "/images/hotels/balchug-kempinski.jpg"
+  },
+  {
+    name: "فندق FOUR SEASONS | FOUR SEASONS HOTEL",
+    rating: { google: 4.8, tripAdvisor: 4.6, booking: 9.2 },
+    description: "فندق خمس نجوم فاخر في موقع متميز بالقرب من الكرملين.",
+    location: "شارع Okhotny Ryad، 2، موسكو",
+    features: ["مطاعم راقية", "سبا فاخر", "قاعات اجتماعات", "خدمة كونسيرج"],
+    image: "/images/hotels/four-seasons-moscow.jpg"
   }
 ];
 
@@ -74,9 +173,9 @@ export default function HotelsPage() {
         <div className="absolute inset-0 bg-black/20" />
         <div className="relative container mx-auto px-4 h-full flex items-center justify-center text-center">
           <div className="text-white">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">أفضل فنادق موسكو الفاخرة</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">أفضل فنادق موسكو وسانت بطرسبرغ</h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              فنادق خمس نجوم قريبة من الساحة الحمراء والكرملين
+              فنادق خمس نجوم قريبة من الساحة الحمراء والكرملين ومعالم سانت بطرسبرغ
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 

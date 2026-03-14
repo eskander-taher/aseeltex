@@ -12,6 +12,7 @@ export default function Footer() {
           {/* Contact Info */}
           <div>
             <h3 className="text-lg font-bold mb-5">{"تواصل معنا"}</h3>
+            <p className="text-sm text-white/70 mb-3">{"Свяжитесь с нами | Contact Us"}</p>
             <div className="flex flex-col gap-3 text-sm text-white/80">
               <a
                 href="tel:+74957851037"
